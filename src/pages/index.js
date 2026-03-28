@@ -1,174 +1,185 @@
 import * as React from "react"
+import "../styles/mainStyles.css"
+import whiteLogo from '../images/logo.png';
+import icon from '../images/icon.png';
+import banner from '../images/banner.png';
+import fsCover from '../images/fs cover.jpg';
+import fsPages from '../images/fs pages.jpg';
+import fsLogo from '../images/fsLogoR.png';
+import hloLogo from '../images/hloLogo.png';
+import ifLogo from '../images/if-logo.png';
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+import hloCover from '../images/hlo cover.jpg';
+import wwCover from '../images/ww cover.jpg';
+import ifCover from '../images/if cover1.jpg';
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+import fs1 from '../images/FS01_003.jpg';
+import fs2 from '../images/FS01_004.jpg';
+import fs3 from '../images/FS04_002.jpg';
+import fs4 from '../images/FS04_003.jpg';
+import fs5 from '../images/FS04_025.jpg';
+import fs6 from '../images/FS04_026.jpg';
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+import hlo1 from '../images/hlo/hlo1.jpg';
+import hlo2 from '../images/hlo/hlo2.jpg';
+import hlo3 from '../images/hlo/hlo3.jpg';
+import hlo4 from '../images/hlo/hlo4.jpg';
+import hlo5 from '../images/hlo/hlo5.jpg';
+import hlo6 from '../images/hlo/hlo6.jpg';
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+import ww1 from '../images/ww/ww1.jpg';
+import ww2 from '../images/ww/ww2.jpg';
+import ww3 from '../images/ww/ww3.jpg';
+import ww4 from '../images/ww/ww4.jpg';
+import ww5 from '../images/ww/ww5.jpg';
+import ww6 from '../images/ww/ww6.jpg';
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+import if1 from '../images/if/if1.jpg';
+import if2 from '../images/if/if2.jpg';
+import if3 from '../images/if/if3.jpg';
+import if4 from '../images/if/if4.jpg';
+import if5 from '../images/if/if5.jpg';
+import if6 from '../images/if/if6.jpg';
+
+import uh from '../images/illustrations/uh.jpg';
+import dd from '../images/illustrations/darla.jpg';
+import mr from '../images/illustrations/maxineRed.jpg'
 
 const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Netlify. Get started for free!",
-    color: "#663399",
-  },
 ]
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>
-          — you just made a Gatsby site! 🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+    <main>
+      <h1>Ezequiel Espinoza Diaz</h1>
+      <div className="introduction">
+        <img className="main-logo" src={whiteLogo} alt="Ezequiel Espinoza Diaz Logo"></img>
+        <p>Hello! My name is Ezequiel Espinoza Diaz, I am a comic artist and illustrator based in Washington D.C. I currently study Graphic Design at the University of the District of Columbia.
+I love creating character driven stories that focus on flaws and the struggles that come with overcoming those inner problems. I enjoy experimenting artistically to create unique art and typography that matches the mood and feeling the story calls for. 
+</p>
+      </div>
+      
+      {/* <img className="banner" src={banner} alt="Main Banner Art"></img> */}
+      <h2 className="section-header">Comics and Sequential Art</h2>
+      
+      <section className="comicSection">
+        <div className="comicInnerContainer">
+          <div className="comicMainContent">
+            <img className="comic-cover" src={fsCover}></img>
+            <div className="comic-text">
+              <img src={fsLogo} alt="FireStarter Comic Logo Red"/>
+                <p className="comicDesc">
+              My comic FireStarter is an ongoing series that focuses on a young woman’s struggle to overcome the death of her mother through trials of violence and a desire for love. FireStarter is drawn in black and white with red accents at certain story points and blends elements of American comics and Japanese Manga.            </p>
+            </div>
+            
+          </div>
+
+            <div className="comic-gallery">
+              <img src={fs1}></img>
+              <img src={fs2}></img>
+              <img src={fs3}></img>
+              <img src={fs4}></img>
+              <img src={fs5}></img>
+              <img src={fs6}></img>
+            </div>
+            <a href="#" target="_blank">
+            <button className="read-button fs-button">Read Full Series Here</button>
+            </a>        </div>
+      </section>
+
+      <section className="comicSection hlo-section">
+        <div className="comicInnerContainer">
+          <div className="comicMainContent">
+            <img className="comic-cover" src={hloCover}></img>
+            <div className="comic-text hlo-text">
+                <img className="hlo-logo" src={hloLogo} alt="Hearts like Ours Logo"/>
+                <p className="comicDesc">
+A short comic centered around the complex friendship between a girl seeking friendship, and another who won’t admit she’s seeking the same thing. Hearts Like Ours is a mixed media project that involves collage, photography, and a mishmash of different digital art styles to create a scrapbook like feel.               </p>
+            </div>
+            
+          </div>
+
+            <div className="comic-gallery hlo-gallery">
+              <img src={hlo1}></img>
+              <img src={hlo2}></img>
+              <img src={hlo3}></img>
+              <img src={hlo4}></img>
+              <img src={hlo5}></img>
+              <img src={hlo6}></img>
+            </div>
+
+            <a href="#" target="_blank">
+            <button className="read-button fs-button">Read Full Series Here</button>
+            </a>
+        </div>
+      </section>
+
+
+
+      {/* <section className="comicSection">
+        <div className="comicInnerContainer">
+          <h3 className="comicQuote">A fiery woman's quest for revenge.</h3>
+          <div className="comicMainContent">
+            <img className="comic-cover" src={wwCover}></img>
+            <div className="comic-text">
+              <h2>Whispered Wishes</h2>
+                <p className="comicDesc">
+              My comic FireStarter is an ongoing series that focuses on a young woman’s struggle to overcome the death of her mother through trials of violence and a desire for love. FireStarter is drawn in black and white with red accents at certain story points and blends elements of American comics and Japanese Manga.            </p>
+            </div>
+            
+          </div>
+
+            <div className="comic-gallery">
+              <img src={ww1}></img>
+              <img src={ww2}></img>
+              <img src={ww3}></img>
+              <img src={ww4}></img>
+              <img src={ww5}></img>
+              <img src={ww6}></img>
+            </div>
+
+            <p>Insert Gallery Here</p>
+            <button>Read More</button>
+        </div>
+      </section> */}
+
+      <section className="comicSection if-section">
+        <div className="comicInnerContainer">
+          <div className="comicMainContent">
+            <img className="comic-cover" src={ifCover}></img>
+            <div className="comic-text if-text">
+                <img className="if-logo" src={ifLogo} alt="Isolated Fears Logo"/>
+                <p className="comicDesc">
+A 6 page comic centered around friendship and an unspoken loneliness that has created an awkward rift between the women’s unspoken desires for closeness. Isolated Fears is an experiment in color and how it can help communicate stories and character emotions.
+                </p>
+              </div>
+            
+          </div>
+
+            <div className="comic-gallery">
+              <img src={if1}></img>
+              <img src={if2}></img>
+              <img src={if3}></img>
+              <img src={if4}></img>
+              <img src={if5}></img>
+              <img src={if6}></img>
+            </div>
+            <a href="#" target="_blank">
+            <button className="read-button fs-button">Read Full Series Here</button>
+            </a>
+        </div>
+      </section>
+
+        <h2 className="section-header">Illustrations</h2>
+        <section className="illustration-section">
+          <div className="comic-gallery illus-gallery">
+            <img src={uh}></img>
+            <img src={dd}></img>
+            <img src={mr}></img>
+          </div>
+        </section>
+
     </main>
   )
 }

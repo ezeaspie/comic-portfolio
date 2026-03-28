@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Staatliches&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-size:1rem;
+    text-decoration: none;
+    color:auto;
+}
+
+main{
+    background-color: #3D3D3D;
+}
+
+h1{
+    font-size:3rem;
+}
+h2{
+    font-size:1.5rem;
+}
+
+.section-header{
+    font-size: 3rem;
+    font-family: 'Staatliches';
+    color: #fff7ec;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.introduction p{
+    font-size: 1.2rem;
+    color:#fff7ec;
+}
+
+.main-logo{
+    max-width: 500px;
+    margin: 1rem 2rem;
+}
+
+.banner{
+    max-width: 1250px;
+}
+
+.comicSection{
+    padding-bottom: 1rem;
+}
+
+.hlo-section{
+    background-color: #dd698c;
+}
+
+.if-section{
+    background-color: #fffcdd;
+}
+
+.hlo-gallery>img{
+    box-sizing: border-box;
+    border:solid 4px black;
+}
+
+.comicMainContent{
+    display: flex;
+    max-width: 1600px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.comic-cover{
+    max-width: 50%;
+}
+
+.comic-text{
+    display: flex;
+    flex-direction: column;
+    color:antiquewhite;
+    justify-content: center;
+    align-content: center;
+}
+
+.hlo-text{
+    color:#261127;
+    text-align: center;
+}
+
+.if-text{
+    color:#46252f;
+}
+
+.comic-text img{
+    width: 80%;
+    margin-bottom: 2.5rem;
+}
+.hlo-logo{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.comic-text p{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.comic-gallery{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+.comic-gallery img{
+    width: 30%;
+    margin: 5px 10px
+}
+
+.illus-gallery img{
+    width: 80%;
+    max-width: 750px;
+}
+
+.comicInnerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.read-button{
+    display: inline-block;
+    border:none;
+    background-color: pink;
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 1rem;
+}
+.read-button:hover{
+    cursor: pointer;
+}
+
+.fs-button{
+    background-color:#d71f1f;
+    font-size: 1.2rem;
+}
