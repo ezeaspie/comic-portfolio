@@ -15,7 +15,32 @@ main{
 
 h1{
     font-size:3rem;
+    font-family: 'Staatliches';
+    color: white;
+    background-color: #000;
+    text-align: center;
+    display: none;
 }
+
+.main-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-pic{
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.main-card p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 750px;
+
+}
+
 h2{
     font-size:1.5rem;
 }
@@ -26,6 +51,8 @@ h2{
     color: #fff7ec;
     margin: 0 auto;
     text-align: center;
+    margin-top: 1.5rem;
+
 }
 
 .introduction{
@@ -33,8 +60,11 @@ h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
+    background: #000;
+    padding-bottom: 1rem;
+    
+
 }
 
 .introduction p{
@@ -78,7 +108,7 @@ h2{
 }
 
 .comic-cover{
-    max-width: 50%;
+    max-width: 750px;
 }
 
 .comic-text{
@@ -99,7 +129,7 @@ h2{
 }
 
 .comic-text img{
-    width: 80%;
+    max-width: 600px;
     margin-bottom: 2.5rem;
 }
 .hlo-logo{
@@ -109,7 +139,7 @@ h2{
 
 .comic-text p{
     font-size: 1.5rem;
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .comic-gallery{

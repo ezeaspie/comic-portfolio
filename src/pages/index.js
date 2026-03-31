@@ -13,6 +13,9 @@ import hloCover from '../images/hlo cover.jpg';
 import wwCover from '../images/ww cover.jpg';
 import ifCover from '../images/if cover1.jpg';
 
+import profile from '../images/profile.jpg';
+
+
 import fs1 from '../images/FS01_003.jpg';
 import fs2 from '../images/FS01_004.jpg';
 import fs3 from '../images/FS04_002.jpg';
@@ -54,10 +57,15 @@ const IndexPage = () => {
     <main>
       <h1>Ezequiel Espinoza Diaz</h1>
       <div className="introduction">
-        <img className="main-logo" src={whiteLogo} alt="Ezequiel Espinoza Diaz Logo"></img>
-        <p>Hello! My name is Ezequiel Espinoza Diaz, I am a comic artist and illustrator based in Washington D.C. I currently study Graphic Design at the University of the District of Columbia.
+        <div className="main-card">
+          <img className="main-logo" src={whiteLogo} alt="Ezequiel Espinoza Diaz Logo"></img>
+          <img className="main-pic" src={profile}/>
+          <p>Hello! My name is Ezequiel Espinoza Diaz, I am a comic artist and illustrator based in Washington D.C. I currently study Graphic Design at the University of the District of Columbia.
 I love creating character driven stories that focus on flaws and the struggles that come with overcoming those inner problems. I enjoy experimenting artistically to create unique art and typography that matches the mood and feeling the story calls for. 
 </p>
+        </div>
+        
+        
       </div>
       
       {/* <img className="banner" src={banner} alt="Main Banner Art"></img> */}
