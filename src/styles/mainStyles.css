@@ -26,7 +26,6 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .main-pic{
@@ -37,12 +36,13 @@ h1{
 
 .main-card p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 750px;
-
+    padding: 1rem;
+    width: 100%;
 }
 
 h2{
     font-size:1.5rem;
+    text-decoration: underline;
 }
 
 .section-header{
@@ -63,7 +63,7 @@ h2{
     margin: 0 auto;
     background: #000;
     padding-bottom: 1rem;
-    
+    padding:1rem;
 
 }
 
@@ -75,6 +75,12 @@ h2{
 .main-logo{
     max-width: 500px;
     margin: 1rem 2rem;
+}
+
+.header-desc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner{
@@ -100,6 +106,7 @@ h2{
 
 .comicMainContent{
     display: flex;
+    flex-direction: column;
     max-width: 1600px;
     align-content: center;
     justify-content: center;
@@ -108,7 +115,9 @@ h2{
 }
 
 .comic-cover{
-    max-width: 750px;
+    width:50%;
+    min-width: 250px;
+    max-width: 600px;
 }
 
 .comic-text{
@@ -117,6 +126,9 @@ h2{
     color:antiquewhite;
     justify-content: center;
     align-content: center;
+    width:80%;
+    margin-bottom: 2rem;
+
 }
 
 .hlo-text{
@@ -131,10 +143,12 @@ h2{
 .comic-text img{
     max-width: 600px;
     margin-bottom: 2.5rem;
+    min-width: 250px;
 }
-.hlo-logo{
-    max-width: 400px;
+#hlo-logo{
+    max-width: 350px;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .comic-text p{
@@ -150,10 +164,8 @@ h2{
     margin: 0 auto;
 }
 
-
-
 .comic-gallery img{
-    width: 30%;
+    width: 45%;
     margin: 5px 10px
 }
 
@@ -175,6 +187,8 @@ h2{
     padding: 1rem;
     border-radius: 3px;
     margin: 1rem;
+        font-size: 1.2rem;
+
 }
 .read-button:hover{
     cursor: pointer;
@@ -182,5 +196,36 @@ h2{
 
 .fs-button{
     background-color:#d71f1f;
-    font-size: 1.2rem;
+}
+.hlo-button{
+    background-color: #a6d379;
+}
+
+@media screen and (min-width:768px) {
+    .header-desc-container{
+        flex-direction: row;
+        margin-top: -1rem;
+    }
+
+    .main-pic{
+        margin-right: 2rem;
+    }
+
+    .main-card p{
+        max-width: 500px;
+    }
+
+    .comicMainContent{
+        flex-direction: row;
+        
+    }
+
+    .comic-text{
+            width:40%;
+    }
+
+    .comic-gallery img{
+        width: 30%;
+        margin: 5px 10px
+    }
 }

@@ -58,11 +58,15 @@ const IndexPage = () => {
       <h1>Ezequiel Espinoza Diaz</h1>
       <div className="introduction">
         <div className="main-card">
-          <img className="main-logo" src={whiteLogo} alt="Ezequiel Espinoza Diaz Logo"></img>
-          <img className="main-pic" src={profile}/>
-          <p>Hello! My name is Ezequiel Espinoza Diaz, I am a comic artist and illustrator based in Washington D.C. I currently study Graphic Design at the University of the District of Columbia.
+            <img className="main-logo" src={whiteLogo} alt="Ezequiel Espinoza Diaz Logo"></img>
+              <div className="header-desc-container">
+
+                <img className="main-pic" src={profile}/>
+          
+                <p>Hello! My name is Ezequiel Espinoza Diaz, I am a comic artist and illustrator based in Washington D.C. I currently study Graphic Design at the University of the District of Columbia.
 I love creating character driven stories that focus on flaws and the struggles that come with overcoming those inner problems. I enjoy experimenting artistically to create unique art and typography that matches the mood and feeling the story calls for. 
 </p>
+              </div>
         </div>
         
         
@@ -91,17 +95,17 @@ I love creating character driven stories that focus on flaws and the struggles t
               <img src={fs5}></img>
               <img src={fs6}></img>
             </div>
-            <a href="#" target="_blank">
+            <a href="https://www.ezequielespinoza.com/firestarter/0/0" target="_blank">
             <button className="read-button fs-button">Read Full Series Here</button>
             </a>        </div>
       </section>
 
       <section className="comicSection hlo-section">
         <div className="comicInnerContainer">
-          <div className="comicMainContent">
+          <div className="comicMainContent hlo-content">
             <img className="comic-cover" src={hloCover}></img>
             <div className="comic-text hlo-text">
-                <img className="hlo-logo" src={hloLogo} alt="Hearts like Ours Logo"/>
+                <img id="hlo-logo" src={hloLogo} alt="Hearts like Ours Logo"/>
                 <p className="comicDesc">
 A short comic centered around the complex friendship between a girl seeking friendship, and another who won’t admit she’s seeking the same thing. Hearts Like Ours is a mixed media project that involves collage, photography, and a mishmash of different digital art styles to create a scrapbook like feel.               </p>
             </div>
@@ -117,8 +121,8 @@ A short comic centered around the complex friendship between a girl seeking frie
               <img src={hlo6}></img>
             </div>
 
-            <a href="#" target="_blank">
-            <button className="read-button fs-button">Read Full Series Here</button>
+            <a href="https://www.ezequielespinoza.com/one-shots/13/0" target="_blank">
+            <button className="read-button hlo-button">Read Full Series Here</button>
             </a>
         </div>
       </section>
@@ -173,8 +177,8 @@ A 6 page comic centered around friendship and an unspoken loneliness that has cr
               <img src={if5}></img>
               <img src={if6}></img>
             </div>
-            <a href="#" target="_blank">
-            <button className="read-button fs-button">Read Full Series Here</button>
+            <a href="https://www.ezequielespinoza.com/one-shots/11/0" target="_blank">
+            <button className="read-button if-button">Read Full Series Here</button>
             </a>
         </div>
       </section>
