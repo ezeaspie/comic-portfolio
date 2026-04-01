@@ -198,4 +198,4 @@ A 6 page comic centered around friendship and an unspoken loneliness that has cr
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Ezequiel Espinoza Diaz</title>
